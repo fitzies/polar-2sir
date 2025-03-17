@@ -12,7 +12,7 @@ const PHYSICAL_INFO_ENDPOINT = "https://www.polaraccesslink.com/v3/users";
 
 // Redis Client Setup
 const redisClient = createClient({
-  url: "redis://default:auCDDzFHZmIKIyERoOEFxaFoVviPcspK@shinkansen.proxy.rlwy.net:51616",
+  url: process.env.REDIS,
 });
 redisClient.on("error", (err) => console.log("Redis Client Error", err));
 
