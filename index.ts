@@ -4,7 +4,7 @@ import { createClient } from "redis";
 // Configuration
 const CLIENT_ID = process.env.CLIENT_ID!; // Your Polar client ID
 const CLIENT_SECRET = process.env.CLIENT_SECRET!; // Your Polar client secret
-const REDIRECT_URI = "http://localhost:3000/auth/callback"; // Must be registered in Polar admin
+const REDIRECT_URI = "https://polar-2sir-production.up.railway.app/"; // Must be registered in Polar admin
 const AUTHORIZATION_ENDPOINT = "https://flow.polar.com/oauth2/authorization";
 const TOKEN_ENDPOINT = "https://polarremote.com/v2/oauth2/token"; // Updated token endpoint
 const REGISTER_USER_ENDPOINT = "https://www.polaraccesslink.com/v3/users";
